@@ -3,11 +3,10 @@ const {Schema} = mongoose;
 
 const UsuarioSchema = new Schema({
 nombres:String,
-apellidos:String,
-identificacion:String,
-puesto:String,
-contrato:String,
-jefe:String
+rol:String,
+correo:String,
+contrasena:String,
+estado:String
 
 })
 

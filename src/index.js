@@ -6,15 +6,16 @@ const bodyparser = require("body-parser")
 require("./database")
 
 
+
 app.set('Port',4000);
 
 app.use(morgan('dev'));
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
 app.use(cors({origen:'*'}));
-app.use("/jefe",require("./routes/Jefe.route"))
-app.use("/empleados",require("./routes/empleado.router"))
-app.use("/productos",require("./routes/producto.router"))
+app.use("/usuario",require("./routes/Usuario.route"))
+app.use("/productos",require("./routes/producto.route"))
+app.use("/ventas",require("./routes/Ventas.route"))
 
 app.listen(app.get('Port'),()=>{
 
