@@ -1,6 +1,6 @@
 const monngoose = require("mongoose")
 
-URI=("mongodb://localhost/basededatoscrud")
+URI=("mongodb+srv://galvised:Riachuelos2020++@basededatospagwebminist.0goxf.mongodb.net/test")
 
 monngoose.connect(URI,{
     useNewUrlParser:true,
@@ -10,7 +10,7 @@ monngoose.connect(URI,{
 
 })
 
-.then(db=>console.log("Base de datos conectadaa"))
+.then(db=>console.log("Base de datos conectada", db.connection.name))
 .catch(error=>console.log(error))
 
 module.exports = monngoose
