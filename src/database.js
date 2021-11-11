@@ -5,8 +5,8 @@ URI=("mongodb+srv://galvised:Riachuelos2020++@basededatospagwebminist.0goxf.mong
 monngoose.connect(URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
-    //useCreateIndex:true,
-    //useFindAndModify:false
+    useCreateIndex:true,
+    useFindAndModify:false
 
 })
 

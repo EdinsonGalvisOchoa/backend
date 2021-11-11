@@ -7,7 +7,7 @@ require("./database")
 
 
 
-app.set('Port',4000);
+app.set('Port',process.env.PORT || 4000);
 
 app.use(morgan('dev'));
 app.use(bodyparser.urlencoded({extended:true}));
